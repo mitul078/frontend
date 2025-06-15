@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+.rubik-dirt-regular {
+  font-family: "Rubik Dirt", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+nav{
+    font-family: 'Rubik Dirt';
+}
+body{
+    background-color: 	#6d5a0a;
+}

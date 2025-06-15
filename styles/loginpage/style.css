@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  font-family: "Comic Relief";
+  width: 100%;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container .box {
+  width: 20rem;
+  height: 25rem;
+  background-color: #d6c499;
+  border-radius: 1em;
+  box-shadow: 2px 4px 10px #a09693;
+}
+.container .box form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+}
+.container .box form input {
+  font-size: 1.4rem;
+  border-bottom: 2px solid #c76c3f;
+  color: #311e01;
+  border-radius: 1em;
+  padding-left: 1rem;
+  outline: none;
+}
+.container .box form p {
+  margin: 1rem;
+  font-size: 0.9rem;
+}
+.container .box form span {
+  color: #855307;
+  cursor: pointer;
+}
+.container .box form button {
+  background-color: tomato;
+  color: white;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 1rem;
+  transition: scale 0.3s ease-in-out;
+}
+.container .box form button:active {
+  scale: 0.8;
+}/*# sourceMappingURL=style.css.map */

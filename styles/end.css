@@ -1,0 +1,25 @@
+.End {
+  width: 100%;
+}
+.End .end-container {
+  width: 100%;
+  height: 30rem;
+  color: ghostwhite;
+  padding: 1rem 10rem;
+}
+.End .end-container p {
+  width: 80%;
+  font-size: 2rem;
+}
+.End .end-container span {
+  text-transform: uppercase;
+  font-weight: 900;
+  font-family: "Comic Relief";
+}
+.End .end-container button {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  font-family: "Comic Relief";
+  cursor: pointer;
+}/*# sourceMappingURL=end.css.map */

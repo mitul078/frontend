@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.profilepage {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+.profilepage .container {
+  width: 100%;
+  height: 600px;
+  display: flex;
+}
+.profilepage .container .left {
+  flex-shrink: 0;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 2rem;
+}
+.profilepage .container .left .profile-image {
+  flex-shrink: 0;
+  width: 25rem;
+  height: 25rem;
+}
+.profilepage .container .left .profile-image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 1em;
+}
+.profilepage .container .right {
+  width: 50%;
+  height: 100%;
+  padding: 2rem;
+}
+.profilepage .container .right .boxes {
+  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+.profilepage .container .right .boxes .box {
+  width: 100%;
+  height: 6rem;
+  padding: 1rem;
+  font-size: 1.2rem;
+}
+.profilepage .container .right .boxes .box h3 {
+  margin-left: 1rem;
+  opacity: 0.6;
+}
+.profilepage .container .right .boxes .box input {
+  border-bottom: 2px solid rgb(225, 143, 36);
+  padding-left: 1rem;
+  outline: none;
+}
+.profilepage .container .right button {
+  cursor: pointer;
+  background-color: tomato;
+  color: white;
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+  margin-left: 1rem;
+  border-radius: 2em;
+  transition: scale 0.3s ease;
+}
+.profilepage .container .right button:active {
+  scale: 0.9;
+}/*# sourceMappingURL=profile.css.map */

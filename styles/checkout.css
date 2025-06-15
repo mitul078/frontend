@@ -1,0 +1,166 @@
+.checkoutPage {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+  color: black;
+}
+.checkoutPage .left {
+  width: 70%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.checkoutPage .left .layer1,
+.checkoutPage .left .layer2 {
+  width: 100%;
+  height: 5rem;
+  padding: 0.5rem 3rem;
+}
+.checkoutPage .left .layer1,
+.checkoutPage .left .layer2,
+.checkoutPage .left .layer3,
+.checkoutPage .left .layer4 {
+  background-color: white;
+}
+.checkoutPage .left .layer1 h1,
+.checkoutPage .left .layer2 h1,
+.checkoutPage .left .layer3 h1,
+.checkoutPage .left .layer4 h1 {
+  font-weight: 600;
+  opacity: 0.6;
+}
+.checkoutPage .left .layer1 {
+  align-items: center;
+}
+.checkoutPage .left .layer1 .box p {
+  font-size: 1.1rem;
+  display: inline-block;
+  padding-left: 0.5rem;
+}
+.checkoutPage .left .layer1 input {
+  border-bottom: 2px solid black;
+  outline: none;
+  padding-left: 0.5rem;
+}
+.checkoutPage .left .layer1 button {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  font-weight: 500;
+  color: black;
+}
+.checkoutPage .left .layer2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.checkoutPage .left .layer2 .box {
+  width: 100%;
+}
+.checkoutPage .left .layer2 .box p {
+  font-size: 1.1rem;
+}
+.checkoutPage .left .layer2 .box input {
+  border-bottom: 2px solid black;
+  outline: none;
+  padding-left: 0.5rem;
+  width: 90%;
+}
+.checkoutPage .left .layer2 button {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  font-weight: 500;
+  color: black;
+}
+.checkoutPage .left .layer3 {
+  height: 15rem;
+  padding: 0.5rem 3rem;
+}
+.checkoutPage .left .layer3 h1 {
+  font-size: 1.3rem;
+}
+.checkoutPage .left .layer3 .data {
+  display: flex;
+}
+.checkoutPage .left .layer3 .data .image {
+  margin-top: 1rem;
+  width: 10rem;
+  height: 10rem;
+}
+.checkoutPage .left .layer3 .data .image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.checkoutPage .left .layer3 .data .info {
+  padding: 0.5rem 1rem;
+}
+.checkoutPage .left .layer3 .data .info .quantity button {
+  padding: 0.5rem 2rem;
+  border-radius: 1em;
+  font-size: 1.1rem;
+  cursor: pointer;
+  color: white;
+}
+.checkoutPage .left .layer3 .data .info h2 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+.checkoutPage .left .layer3 .data .info p {
+  font-size: 1rem;
+  font-weight: 400;
+}
+.checkoutPage .left .layer3 .data .info h3 {
+  font-size: 2rem;
+}
+.checkoutPage .left .layer4 {
+  padding: 0.5rem 3rem;
+  align-items: center;
+}
+.checkoutPage .left .layer4 span {
+  color: blue;
+  font-weight: 700;
+  cursor: pointer;
+}
+.checkoutPage .left .layer4 button {
+  font-weight: 800;
+  padding: 0.5rem 1rem;
+  color: white;
+  cursor: pointer;
+  border-radius: 1em;
+  background-color: #da6d42;
+  text-transform: uppercase;
+}
+.checkoutPage .right {
+  flex: 1;
+  height: -moz-fit-content;
+  height: fit-content;
+  background-color: white;
+  padding: 0.5rem 1rem;
+}
+.checkoutPage .right .head h1 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  opacity: 0.6;
+}
+.checkoutPage .right .priceDetail .b1,
+.checkoutPage .right .priceDetail .b2,
+.checkoutPage .right .priceDetail .b3,
+.checkoutPage .right .priceDetail .b4 {
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.checkoutPage .right .price {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1rem;
+  font-size: 1.3rem;
+  font-weight: 700;
+}/*# sourceMappingURL=checkout.css.map */

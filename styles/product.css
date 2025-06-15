@@ -1,0 +1,97 @@
+.productPage {
+  width: 100%;
+  height: 100vh;
+}
+.productPage .container {
+  width: 100%;
+  min-height: -moz-fit-content;
+  min-height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+.productPage .container .product-box {
+  margin-top: 1rem;
+  flex-shrink: 0;
+  width: 20rem;
+  height: 25rem;
+  background-color: #bfb2a1;
+  padding: 0.5rem;
+}
+.productPage .container .product-box .image {
+  width: 100%;
+  height: 50%;
+}
+.productPage .container .product-box .image img {
+  border-radius: 0.5em;
+  width: 100%;
+  height: 100%;
+}
+.productPage .container .product-box .productData {
+  width: 100%;
+  height: 50%;
+}
+.productPage .container .product-box .productData h1 {
+  font-weight: 900;
+  white-space: nowrap;
+}
+.productPage .container .product-box .productData p {
+  opacity: 0.7;
+}
+.productPage .container .product-box .productData .btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.productPage .container .product-box .productData .btn h3 {
+  font-weight: 900;
+  color: royalblue;
+  font-size: 1.5rem;
+  margin-top: 0.5rem;
+}
+.productPage .container .product-box .productData .btn button {
+  margin-top: 0.5rem;
+  background-color: #da6d42;
+  color: whitesmoke;
+  border-radius: 1em;
+  padding: 0.5rem 1rem;
+  border: none;
+  cursor: pointer;
+  transition: scale 0.3s ease-in;
+}
+.productPage .container .product-box .productData .btn button:active {
+  scale: 0.7;
+}
+
+@media (max-width: 768px) {
+  .productPage .container {
+    display: grid;
+    grid-template-columns: repeat(2, 170px);
+  }
+  .productPage .container .product-box {
+    height: 22rem;
+    width: 100%;
+  }
+  .productPage .container .product-box .image {
+    height: 40%;
+  }
+  .productPage .container .product-box .productData h1 {
+    white-space: wrap;
+  }
+  .productPage .container .product-box .productData .btn {
+    flex-direction: column;
+    align-items: start;
+    gap: 0;
+  }
+  .productPage .container .product-box .productData .btn h3 {
+    font-size: 1rem;
+  }
+  .productPage .container .product-box .productData .btn button {
+    padding: 0.1rem 0.5rem;
+  }
+  .productPage .container .product-box .productData p {
+    line-height: 1.1rem;
+  }
+}/*# sourceMappingURL=product.css.map */

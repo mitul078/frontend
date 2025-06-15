@@ -1,0 +1,104 @@
+.productDetailPage {
+    width: 100%;
+    height: 100vh;
+    padding: 1rem;
+    font-family: 'Comic Relief';
+    color: white;
+
+    .mainpage {
+        display: flex;
+        width: 100%;
+        height: 100%;
+
+
+        .left {
+            width: 50%;
+            height: fit-content;
+            display: flex;
+            padding: 3rem 7rem;
+            flex-direction: column;
+            box-shadow: 1px 1px 10px goldenrod;
+            border-radius: 1em;
+
+            .name {
+                font-weight: 900;
+                font-size: 3rem;
+            }
+
+            .price {
+                font-size: 2rem;
+                font-weight: lighter;
+            }
+
+            .description,
+            .smalldescription {
+                margin-top: 1rem;
+                font-weight: 500;
+                opacity: .8;
+            }
+
+            .rating {
+                display: flex;
+                justify-content: space-between;
+                button {
+                    padding: .5rem 1rem;
+                    cursor: pointer;
+                    border-radius: 1rem;
+                    
+                }
+            }
+
+            .btn {
+                display: flex;
+                gap: 1rem;
+                margin-top: 1rem;
+                font-size: 1.3rem;
+
+                button {
+                    color: white;
+                    padding: .3rem 1rem;
+                    border-radius: .5rem;
+                    cursor: pointer;
+                }
+            }
+        }
+
+        .right {
+            width: 50%;
+            height: 100%;
+
+            .mainimage {
+                width: 100%;
+                height: 70%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                img {
+                    width: 70%;
+                    border-radius: 4em;
+                    box-shadow: 1px 1px 10px whitesmoke;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            .boximage {
+                width: 100%;
+                height: 30%;
+                padding: 1rem 2rem;
+                display: flex;
+                gap: 1rem;
+                margin-top: 1rem;
+
+                img {
+                    cursor: pointer;
+                    border-radius: 1em;
+                    flex-shrink: 0;
+                    width: 5rem;
+                    height: 5rem;
+                }
+            }
+        }
+    }
+}

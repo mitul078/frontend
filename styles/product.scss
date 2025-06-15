@@ -1,0 +1,104 @@
+.productPage {
+    width: 100%;
+    height: 100vh;
+
+    .container {
+        width: 100%;
+        min-height: fit-content;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: .5rem;
+        flex-wrap: wrap;
+
+        .product-box {
+            margin-top: 1rem;
+            flex-shrink: 0;
+            width: 20rem;
+            height: 25rem;
+            background-color: #bfb2a1;
+            padding: .5rem;
+            .image {
+                width: 100%;
+                height: 50%;
+
+                img {
+                    border-radius: .5em;
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            .productData{
+                width: 100%;
+                height: 50%;
+                h1{
+                    font-weight: 900;
+                    white-space: nowrap;
+                }
+                p{
+                    opacity: .7;
+                }
+                .btn{
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    h3{
+                        font-weight: 900;
+                        color: royalblue;
+                        font-size: 1.5rem;
+                        margin-top: .5rem;
+                    }
+                    button{
+                        margin-top: .5rem;
+                        background-color: #da6d42;
+                        color: whitesmoke;
+                        border-radius: 1em;
+                        padding: .5rem 1rem;
+                        border: none;
+                        cursor: pointer;
+                        transition: scale .3s ease-in;
+                        &:active{
+                            scale: .7;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:768px) {
+    .productPage {
+        .container {
+            display: grid;
+            grid-template-columns: repeat(2, 170px);
+            .product-box {
+                height: 22rem;
+                width: 100%;
+                .image{
+                    height: 40%;
+                }
+                .productData{
+                    h1{
+                        white-space: wrap   ;
+                    }
+                    .btn{
+                        flex-direction: column;
+                        align-items: start;
+                        gap: 0;
+                        h3{
+                            font-size: 1rem;
+                        }
+                        button{
+                            padding: .1rem .5rem;
+                        }
+                    }
+                    p{
+                        line-height: 1.10rem;
+                    }
+
+                }
+            }
+        }
+    }
+}
