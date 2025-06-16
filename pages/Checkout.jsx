@@ -12,13 +12,13 @@ const Checkout = () => {
     const user = JSON.parse(localStorage.getItem("user"));
     const navigate = useNavigate();
 
-    
-    const navigateHandler = (id ) => {
-        if(user.mobile === "" && user.address === "") {
+
+    const navigateHandler = (id) => {
+        if (user.mobile === "" && user.address === "") {
             alert("Enter User Details")
             return
         }
-        navigate(`/Checkout/invoice/${id}` , {state: {quantity:quantity}})
+        navigate(`/Checkout/invoice/${id}`, { state: { quantity: quantity } })
     }
     let [qauntityP, setqauntityP] = useState(1)
     const [address, setaddress] = useState({
@@ -39,7 +39,7 @@ const Checkout = () => {
         try {
             const newMobile = { ...user, mobile: number }
             localStorage.setItem("user", JSON.stringify(newMobile))
-            await axios.patch(`/users/${user.id}`, {mobile:number})
+            await axios.patch(`/users/${user.id}`, { mobile: number })
             setshowNumber(false);
         } catch (error) {
             console.log(error);
@@ -96,11 +96,11 @@ const Checkout = () => {
                     <div className="box">
                         <h1>LOGIN:</h1>
                         <p>{user.name}</p>
-                        
+
                         <p>
                             {showNumber ? (
                                 <input type="number"
-                                required
+                                    required
                                     value={number}
                                     placeholder='Number Valid'
                                     onChange={(e) => setnumber(e.target.value)}
@@ -155,42 +155,40 @@ const Checkout = () => {
                         </div>
                     </div>
                 </div>
-                <div className="layer4 flex justify-between ">
+                <div className="right">
+                    <div className="box">
+                        <div className="head">
+                            <h1>PriceDetail</h1>
+                        </div>
+                        <hr />
+                        <div className="priceDetail">
+                            <div className="b1">
+                                <h2>Price</h2>
+                                <p>${totalAmount}</p>
+                            </div>
+                            <div className="b2">
+                                <h2>Delivery Charge</h2>
+                                <p>Free</p>
+                            </div>
+                            <div className="b3">
+                                <h2>Plateform Fee</h2>
+                                <p>Free</p>
+                            </div>
+                        </div>
+                        <hr />
+                        <div className="price">
+                            <h1>Total Payable</h1>
+                            <p>${totalAmount}</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div className="layer4 flex justify-between last ">
                     <p>Order Confirmation Email Will Be Sent To <span>
                         {user.email ? user.email : "Not given"}
                     </span></p>
-                    <button onClick={()=> navigateHandler(product.id , quantity)}>Continue</button>
+                    <button onClick={() => navigateHandler(product.id, quantity)}>Continue</button>
                 </div>
-
-
-            </div>
-            <div className="right">
-                <div className="box">
-                    <div className="head">
-                        <h1>PriceDetail</h1>
-                    </div>
-                    <hr />
-                    <div className="priceDetail">
-                        <div className="b1">
-                            <h2>Price</h2>
-                            <p>${totalAmount}</p>
-                        </div>
-                        <div className="b2">
-                            <h2>Delivery Charge</h2>
-                            <p>Free</p>
-                        </div>
-                        <div className="b3">
-                            <h2>Plateform Fee</h2>
-                            <p>Free</p>
-                        </div>
-                    </div>
-                    <hr />
-                    <div className="price">
-                        <h1>Total Payable</h1>
-                        <p>${totalAmount}</p>
-                    </div>
-                </div>
-
             </div>
         </div>
     )

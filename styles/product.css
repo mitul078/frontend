@@ -71,7 +71,7 @@
     grid-template-columns: repeat(2, 170px);
   }
   .productPage .container .product-box {
-    height: 22rem;
+    height: 25rem;
     width: 100%;
   }
   .productPage .container .product-box .image {

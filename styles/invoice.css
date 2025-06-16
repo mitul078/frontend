@@ -1,20 +1,20 @@
 .invoice {
   width: 100%;
-  height: 100vh;
   display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  padding-left: 4rem;
+  justify-content: start;
+  margin: 1rem 2rem;
 }
 .invoice .invoice-container {
   background-color: white;
-  width: 40rem;
-  height: 40rem;
+  width: clamp(20rem, 40vw, 40rem);
+  height: -moz-fit-content;
+  height: fit-content;
   border: 2px solid black;
   color: black;
 }
 .invoice .invoice-container .invoice-header {
-  height: 13rem;
+  height: -moz-fit-content;
+  height: fit-content;
   border-bottom: 2px solid black;
   display: flex;
   align-items: center;
@@ -33,7 +33,7 @@
   justify-content: space-around;
 }
 .invoice .invoice-container .invoice-header .invoice-left h1 {
-  font-size: 5rem;
+  font-size: clamp(2rem, 5vw, 5rem);
   text-transform: uppercase;
 }
 .invoice .invoice-container .invoice-header .invoice-right {

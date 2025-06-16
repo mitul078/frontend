@@ -29,7 +29,7 @@ const Product = () => {
     return (
       <div className='productPage'>
         <div className="container">
-          <p>No products available.</p>
+          <p>Loading .............</p>
         </div>
       </div>
     );

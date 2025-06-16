@@ -49,7 +49,7 @@ const Cart = () => {
               <h1>{product.productName}</h1>
               <small>{product.productDescription}</small>
               <button onClick={() => navigateHandler(product.id)} className='bg-blue-600 '>Checkout @{product.productPrice}</button>
-              <button onClick={() => removeCartItem(product.id)}>Remove</button>
+              <button className='bg-red-500' onClick={() => removeCartItem(product.id)}>Remove</button>
             </div>
           </div>
         ))

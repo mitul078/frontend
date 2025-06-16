@@ -64,7 +64,7 @@ const Profile = () => {
       <div className="container">
         <div className="left">
           <div className="profile-image">
-            <img src="https://shorthand.com/the-craft/raster-images/assets/5kVrMqC0wp/sh-unsplash_5qt09yibrok-4096x2731.jpeg" alt="" />
+            <img src="https://cdn.pixabay.com/photo/2023/02/18/11/00/icon-7797704_640.png" alt="" />
           </div>
         </div>
         <div className="right">

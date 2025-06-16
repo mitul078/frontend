@@ -41,13 +41,27 @@
                 opacity: .8;
                 display: block;
             }
-            button{
-                margin-top: 1rem;
+            button{margin-top: .5rem;
                 padding: .5rem 1rem;
                 cursor: pointer;
                 font-weight: 900;
                 font-size: 1.1rem;
                 border-radius: .5em;
+                display: flex;
+            }
+        }
+    }
+}
+@media (max-width:460px) {
+    .cartPage{
+        .cartbox{
+            flex-direction: column;
+            padding-left: 1rem;
+            padding-bottom: 1rem;
+            .data{
+                small{
+                    width: 100%;
+                }
             }
         }
     }

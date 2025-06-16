@@ -1,6 +1,6 @@
 .checkoutPage {
   width: 100%;
-  height: 100vh;
+  height: 100%;
   display: flex;
   gap: 1rem;
   padding: 1rem;
@@ -163,4 +163,36 @@
   margin-top: 1rem;
   font-size: 1.3rem;
   font-weight: 700;
+}
+
+@media (max-width: 897px) {
+  .checkoutPage {
+    flex-direction: column;
+  }
+  .checkoutPage .left {
+    width: 100%;
+  }
+  .checkoutPage .left .layer1,
+  .checkoutPage .left .layer2,
+  .checkoutPage .left .layer3 {
+    padding: 0 1rem;
+  }
+  .checkoutPage .left .layer3 {
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .checkoutPage .left .layer3 .data {
+    flex-direction: column;
+  }
+}
+@media (max-width: 475px) {
+  .checkoutPage .left .layer3 {
+    padding: 0 1rem;
+  }
+  .checkoutPage .left .layer3 .data .info {
+    padding: 0;
+  }
+  .checkoutPage .left .layer3 .data .info .quantity button {
+    font-size: 1rem;
+  }
 }/*# sourceMappingURL=checkout.css.map */

@@ -1,6 +1,6 @@
 .productDetailPage {
   width: 100%;
-  height: 100vh;
+  height: 100%;
   padding: 1rem;
   font-family: "Comic Relief";
   color: white;
@@ -17,7 +17,6 @@
   display: flex;
   padding: 3rem 7rem;
   flex-direction: column;
-  box-shadow: 1px 1px 10px goldenrod;
   border-radius: 1em;
 }
 .productDetailPage .mainpage .left .name {
@@ -57,17 +56,19 @@
 }
 .productDetailPage .mainpage .right {
   width: 50%;
-  height: 100%;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
 }
 .productDetailPage .mainpage .right .mainimage {
-  width: 100%;
+  width: 70%;
   height: 70%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 .productDetailPage .mainpage .right .mainimage img {
-  width: 70%;
+  width: 100%;
   border-radius: 4em;
   box-shadow: 1px 1px 10px whitesmoke;
   height: 100%;
@@ -77,7 +78,7 @@
 .productDetailPage .mainpage .right .boximage {
   width: 100%;
   height: 30%;
-  padding: 1rem 2rem;
+  padding: 1rem;
   display: flex;
   gap: 1rem;
   margin-top: 1rem;
@@ -88,4 +89,29 @@
   flex-shrink: 0;
   width: 5rem;
   height: 5rem;
+}
+
+@media (max-width: 967px) {
+  .productDetailPage .mainpage {
+    flex-direction: column;
+    align-items: center;
+  }
+  .productDetailPage .mainpage .left {
+    width: 100%;
+    order: 1;
+    padding: 3rem 1rem;
+  }
+  .productDetailPage .mainpage .right {
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .productDetailPage .mainpage .right {
+    flex-direction: row;
+  }
+  .productDetailPage .mainpage .right .boximage {
+    width: 30%;
+    flex-direction: column;
+    margin-top: 0;
+  }
 }/*# sourceMappingURL=productDetail.css.map */

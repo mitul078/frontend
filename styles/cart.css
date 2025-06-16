@@ -44,10 +44,22 @@
   display: block;
 }
 .cartPage .cartbox .data button {
-  margin-top: 1rem;
+  margin-top: 0.5rem;
   padding: 0.5rem 1rem;
   cursor: pointer;
   font-weight: 900;
   font-size: 1.1rem;
   border-radius: 0.5em;
+  display: flex;
+}
+
+@media (max-width: 460px) {
+  .cartPage .cartbox {
+    flex-direction: column;
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+  }
+  .cartPage .cartbox .data small {
+    width: 100%;
+  }
 }/*# sourceMappingURL=cart.css.map */
